@@ -25,29 +25,29 @@ print("Let me know how good my guess is.\n")
 # computer. It won't punish you, but it will frown upon it.
 
 # Guessing low to high
-# for guess in range(1, 21):
-#     result = input_selection(
-#         "I'm guessing {}\nHow is my guess?".format(guess),
-#         ["low", "hit", "high"]
-#     )
-#     if result == "hit":
-#         print("Wuhuu!")
-#         break
+for guess in range(1, 21):
+    result = input_selection(
+        "I'm guessing {}\nHow is my guess?".format(guess),
+        ["low", "hit", "high"]
+    )
+    if result == "hit":
+        print("Wuhuu!")
+        break
 
-#     print("I must have been too low, right?", result)
+    print("I must have been too low, right?", result)
 
 
 # Guessing high to low
-# for guess in range(20, 0, -1):
-#     result = input_selection(
-#         "I'm guessing {}\nHow is my guess?".format(guess),
-#         ["low", "hit", "high"]
-#     )
-#     if result == "hit":
-#         print("Wuhuu!")
-#         break
+for guess in range(20, 0, -1):
+    result = input_selection(
+        "I'm guessing {}\nHow is my guess?".format(guess),
+        ["low", "hit", "high"]
+    )
+    if result == "hit":
+        print("Wuhuu!")
+        break
 
-#     print("I must have been too high, right?", result)
+    print("I must have been too high, right?", result)
 
 # Guessing midpoint of intervals
 
